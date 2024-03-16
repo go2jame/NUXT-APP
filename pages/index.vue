@@ -1,12 +1,23 @@
 <template>
     <div class="container">
         <h1>หน้าแรก</h1>
-        <UDivider :avatar="{ src: 'https://avatars.githubusercontent.com/u/739984?v=4' }" /> x
         <img src="/image/shopping.svg" alt="shopping">
+        <UDivider :avatar="{ src: 'https://avatars.githubusercontent.com/u/739984?v=4' }" /> x
+        Counter: {{ counter }}
+        <button @click="counter++">
+            +
+        </button>
+        <button @click="counter--">
+            -
+        </button>
     </div>
 </template>
 
 <script setup>
+
+
+const counter = useState('counter', () => Math.round(Math.random() * 1000))
+
 useHead({
     title: "หน้าแรก",
     meta: [

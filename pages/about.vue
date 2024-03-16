@@ -2,11 +2,12 @@
     <div class="container">
         <h1>เกี่ยวกับเรา</h1>
         <img src="/image/about.svg" alt="shopping">
-
+        {{ counter }}
     </div>
 </template>
 
 <script setup>
+const counter = useState('counter')
 
 </script>
 
