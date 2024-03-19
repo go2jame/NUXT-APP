@@ -23,6 +23,10 @@
 const { id } = useRoute().params
 const { data: product } = await useFetch('https://dummyjson.com/products/'+id)
 
+definePageMeta({
+    colorMode: 'dark',
+    middleware: "my-middleware"
+})
 </script>
 
 <style scoped>

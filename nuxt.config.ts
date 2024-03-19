@@ -13,5 +13,5 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ["@nuxtjs/color-mode", "@nuxtjs/google-fonts","@nuxt/ui"]
+  modules: ["@nuxtjs/color-mode", "@nuxtjs/google-fonts", "@nuxt/ui", "@pinia/nuxt"]
 })

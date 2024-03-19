@@ -2,6 +2,9 @@
     <div class="container">
         <h1>หน้าแรก</h1>
         <img src="/image/shopping.svg" alt="shopping">
+        <TheHeader>
+            ทดสอบ component
+        </TheHeader>
         <UDivider :avatar="{ src: 'https://avatars.githubusercontent.com/u/739984?v=4' }" /> x
         Counter: {{ counter }}
         <button @click="counter++">
@@ -14,6 +17,8 @@
 </template>
 
 <script setup>
+import TheHeader from '~/components/TheHeader.vue';
+
 
 
 const counter = useState('counter', () => Math.round(Math.random() * 1000))
@@ -28,6 +33,7 @@ useHead({
 })
 definePageMeta({
     colorMode: 'dark',
+    middleware: "my-middleware"
 })
 </script>
 
