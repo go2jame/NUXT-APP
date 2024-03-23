@@ -6,6 +6,7 @@
                 <nuxt-link to="/">หน้าแรก</nuxt-link>
                 <nuxt-link to="/about">เกี่ยวกับเรา</nuxt-link>
                 <nuxt-link to="/products">สินค้าทั้งหมด</nuxt-link>
+                <nuxt-link to="/user">user</nuxt-link>
             </nav>
         </header>
     </div>
@@ -22,6 +23,7 @@
 * {
     font-family: "kanit", sans-serif;
     font-weight: 400;
+    font-size: 20px;
 }
 
 nav {

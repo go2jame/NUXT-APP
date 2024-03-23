@@ -25,7 +25,8 @@ const { data: product } = await useFetch('https://dummyjson.com/products/'+id)
 
 definePageMeta({
     colorMode: 'dark',
-    middleware: "my-middleware"
+    // middleware: "my-middleware"
+
 })
 </script>
 

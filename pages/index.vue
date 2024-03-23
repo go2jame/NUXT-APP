@@ -18,6 +18,8 @@
 
 <script setup>
 import TheHeader from '~/components/TheHeader.vue';
+const appConfig = useAppConfig()
+console.log(appConfig.theme.dark)
 
 
 
